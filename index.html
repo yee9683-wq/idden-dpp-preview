@@ -201,8 +201,6 @@
   .brand-section-note{margin:0 0 18px;color:#6E7D72;font-size:12px;line-height:1.6;word-break:keep-all}
   .brand-video-frame{position:relative;overflow:hidden;border-radius:21px;background:#E9E8E1;box-shadow:0 16px 35px rgba(37,53,43,.13)}
   .brand-video-frame video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;background:#E9E8E1}
-  .brand-video-under{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:11px 2px 0;color:#7A877D;font-size:10px;line-height:1.45}
-  .brand-video-under a{color:#315D42;font-weight:800;text-decoration:none;white-space:nowrap}
   .brand-story-section{margin-top:39px}
   .brand-story-intro{margin:0 0 19px;color:#53675A;font-size:13px;line-height:1.78;word-break:keep-all}
   .brand-story-list{margin:0;padding:0;list-style:none;border-top:1px solid #DEE7DD}
@@ -210,14 +208,18 @@
   .brand-story-no{padding-top:2px;color:#668A73;font-size:11px;font-weight:800;letter-spacing:.04em}
   .brand-story-list strong{display:block;color:#203F2B;font-size:14px;font-weight:800;margin-bottom:4px}
   .brand-story-list span:last-child{display:block;color:#66766A;font-size:12px;line-height:1.6;word-break:keep-all}
-  .brand-story-more{display:inline-flex;align-items:center;gap:6px;margin-top:15px;color:#315D42;text-decoration:none;font-size:11px;font-weight:800}
+  .brand-story-more{display:inline-flex;align-items:center;gap:6px;margin-top:17px;color:#315D42;text-decoration:none;font-size:11px;font-weight:800}
+  .brand-story-bridge{position:relative;overflow:hidden;margin-top:23px;padding:23px 21px 25px;border-radius:18px;background:linear-gradient(135deg,#E9F0E6,#F4F4EB);border:1px solid #DCE7D9}
+  .brand-story-bridge::after{content:"";position:absolute;right:-28px;bottom:-47px;width:170px;height:170px;border:1px solid rgba(54,97,67,.17);border-radius:50%;box-shadow:0 0 0 28px rgba(255,255,255,.22),0 0 0 61px rgba(54,97,67,.05)}
+  .brand-story-bridge span{display:block;position:relative;z-index:1;margin-bottom:13px;color:#66846C;font-size:10px;font-weight:800;letter-spacing:.14em}
+  .brand-story-bridge strong{display:block;position:relative;z-index:1;color:#1A3D28;font-size:20px;line-height:1.4;letter-spacing:-.055em}
   .brand-next{margin-top:36px;padding:22px 19px 20px;border-radius:20px;background:#193C2A;color:#fff}
   .brand-next small{color:#B8D7C3;font-size:10px;font-weight:800;letter-spacing:.13em}
   .brand-next h2{margin:8px 0 7px;font-size:21px;line-height:1.35;letter-spacing:-.05em;word-break:keep-all}
   .brand-next p{margin:0;color:#C8D8CD;font-size:12px;line-height:1.6}
   .brand-next a{display:flex;align-items:center;justify-content:space-between;min-height:47px;margin-top:17px;padding:0 14px;border-radius:10px;background:#fff;color:#1E472F;text-decoration:none;font-size:13px;font-weight:800}
   .brand-next a span:last-child{font-size:18px;font-weight:400}
-  .brand-footer{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:23px 20px 32px;border-top:1px solid #E9ECE7;color:#789082;font-size:11px;font-weight:700}
+  .brand-footer{display:flex;justify-content:center;align-items:center;padding:24px 20px max(32px,env(safe-area-inset-bottom));border-top:1px solid #E9ECE7;color:#263C2D;font-size:19px;font-weight:900;letter-spacing:-.07em}
   .brand-footer a{color:#315740;text-decoration:none}
   @media(max-width:520px){body.idden-brand-page{background:#fff}.brand-shell{box-shadow:none}}
   @media(max-width:359px){.brand-product-link{font-size:10px;padding:0 9px}.brand-wordmark{font-size:25px}.brand-hero h1{font-size:27px}}
@@ -232,28 +234,28 @@
     <main>
       <section class="brand-hero" aria-labelledby="brand-title">
         <span class="brand-eyebrow">SUSTAINABLE TRAVEL AND LIFE</span>
-        <h1 id="brand-title">여행의 작은 물건부터,<br>더 나은 순환으로.</h1>
-        <p class="brand-hero-lead">이든은 여행에서 쓰이는 일회용 플라스틱을 줄이려는 고민에서 시작했습니다. 소재와 제형을 다시 생각하며 일상 속 새로운 선택지를 찾습니다.</p>
+        <h1 id="brand-title">여행에서 시작된,<br>더 나은 일상의 선택.</h1>
+        <p class="brand-hero-lead">여행지에서 마주한 자연과 사람의 이야기가 이든의 시작이 되었습니다. 남은 자원에 새로운 쓰임을 더하고, 일상에서 실천할 수 있는 제품을 만듭니다.</p>
         <div class="brand-hero-mark"><span>LESS PLASTIC · MORE TREES</span><svg viewBox="0 0 116 82" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M56 80V43m0 7-21-15m21 7 18-18m-18 34 25-12"/><path d="M12 37c-3-15 10-26 25-23C44 0 64-2 72 11c15-4 29 8 27 21 11 12 1 27-13 26-8 8-25 7-31 1-14 8-29 3-32-7C10 52 7 43 12 37Z"/><path d="M4 80h108"/></svg></div>
       </section>
       <div class="brand-content">
         <section class="brand-video-section" aria-labelledby="brand-video-title">
           <span class="brand-section-kicker">01 / BRAND FILM</span>
           <h2 id="brand-video-title">이든의 10초 이야기</h2>
-          <p class="brand-section-note">소재를 다시 생각하는 이든의 브랜드 이야기를 짧은 영상으로 만나보세요.</p>
+          <p class="brand-section-note">여행에서 시작된 이든의 생각을 10초 영상으로 만나보세요.</p>
           <div class="brand-video-frame"><video id="idden-story-video" src="idden-story-mobile.mp4" poster="idden-story-poster.png" controls playsinline muted loop preload="metadata" aria-label="이든 브랜드 스토리 10초 영상">이 브라우저에서는 동영상을 재생할 수 없습니다.</video></div>
-          <div class="brand-video-under"><span>이든의 이야기를 담은 짧은 영상</span><a href="idden-story-mobile.mp4">영상 파일 열기 ↗</a></div>
         </section>
         <section class="brand-story-section" aria-labelledby="brand-story-title">
           <span class="brand-section-kicker">02 / IDDEN STORY</span>
-          <h2 id="brand-story-title">더 적게 쓰고,<br>새로운 쓰임을 찾습니다.</h2>
-          <p class="brand-story-intro">이든은 여행과 일상에서 마주하는 작은 물건을 다시 바라봅니다. 필요한 기능을 유지하면서 소재와 사용 방식을 바꿀 가능성을 살핍니다.</p>
+          <h2 id="brand-story-title">여행지의 질문을,<br>일상의 선택으로.</h2>
+          <p class="brand-story-intro">세부에서 본 해양 쓰레기, 보르네오에서 만난 제로웨이스트 문화. 이든은 그 여행의 기억을 일상에서 실천할 수 있는 선택으로 이어갑니다.</p>
           <ol class="brand-story-list">
-            <li><span class="brand-story-no">01</span><div><strong>여행에서 시작한 고민</strong><span>한 번 쓰고 버려지는 어메니티와 일회용 플라스틱을 줄이려는 실천에서 출발했습니다.</span></div></li>
-            <li><span class="brand-story-no">02</span><div><strong>소재와 제형을 다시 생각하기</strong><span>제품의 제형을 바꾸고 새로운 소재를 찾는 방법을 연구합니다.</span></div></li>
-            <li><span class="brand-story-no">03</span><div><strong>자원의 새로운 가능성</strong><span>농업 부산물에서 성분을 추출해 화장품 원료로 활용하는 방향도 탐구합니다.</span></div></li>
+            <li><span class="brand-story-no">01</span><div><strong>여행에서 발견한 질문</strong><span>여행지의 바다와 자연에 남는 플라스틱을 보며, 쓰고 버린 뒤까지 생각하기 시작했습니다.</span></div></li>
+            <li><span class="brand-story-no">02</span><div><strong>남은 원료의 새로운 쓰임</strong><span>맥주 양조 후 남은 효모를 활용한 얼스바처럼, 버려질 수 있는 원료에 다음 역할을 찾습니다.</span></div></li>
+            <li><span class="brand-story-no">03</span><div><strong>간결하게 쓰고, 더 멀리 생각하기</strong><span>샴푸·린스·바디워시를 하나로 담는 얼스바에서 시작해, 나무 심기와 현지 교육으로 생각을 넓혔습니다.</span></div></li>
           </ol>
-          <a class="brand-story-more" href="https://idden.co/about_idden/index.html">이든 브랜드 스토리 더 보기 <span aria-hidden="true">↗</span></a>
+          <div class="brand-story-bridge"><span>IDDEN’S APPROACH</span><strong>필요한 만큼 쓰고,<br>남은 것에는 다시 쓰임을.</strong></div>
+          <a class="brand-story-more" href="https://blog.naver.com/iloveddp/223660050399" target="_blank" rel="noopener noreferrer">이든 브랜드 인터뷰 읽기 <span aria-hidden="true">↗</span></a>
         </section>
         <section class="brand-next" aria-labelledby="brand-next-title">
           <small>NEXT · DIGITAL PRODUCT PASSPORT</small>
@@ -263,7 +265,7 @@
         </section>
       </div>
     </main>
-    <footer class="brand-footer"><span>Idden × KRDPP</span><a href="https://idden.co/">이든 공식 홈페이지 ↗</a></footer>
+    <footer class="brand-footer"><span>Idden</span></footer>
   </div>
   <div class="idden-modal-layer" id="idden-modal" hidden>
   <div class="idden-scrim" id="idden-scrim" aria-hidden="true"></div>
@@ -287,8 +289,8 @@
       </div>
       <div class="idden-promo-body">
         <span class="idden-overline">GET TO KNOW IDDEN</span>
-        <h2 id="idden-dialog-title">제품을 보기 전, 이든의 이야기를 만나보세요.</h2>
-        <p id="idden-dialog-desc">여행의 작은 물건에서 시작된 변화를 10초 영상과 함께 소개합니다.</p>
+        <h2 id="idden-dialog-title">여행에서 시작된 이든의 이야기를 만나보세요.</h2>
+        <p id="idden-dialog-desc">남은 원료에 새로운 쓰임을 더하는 이든의 생각을 영상과 함께 소개합니다.</p>
         <span class="idden-cta"><span>이든 소개 보기</span><span class="idden-cta-arrow" aria-hidden="true">↗</span></span>
       </div>
     </a>
